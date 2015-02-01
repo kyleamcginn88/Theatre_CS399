@@ -274,9 +274,8 @@ class Common(Configuration):
     }
     # END LOGGING CONFIGURATION
 
-    #@classmethod
-    #def post_setup(cls):
-        #cls.DATABASES['default']['ATOMIC_REQUESTS'] = True
-        #return 1
+    @classmethod
+    def post_setup(cls):
+        cls.DATABASES['default']['ATOMIC_REQUESTS'] = True
 
     # Your common stuff: Below this line define 3rd party library settings
