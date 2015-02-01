@@ -1,7 +1,7 @@
 Theatre
 ==============================
 
-CS399-PROJ2
+CS399_PROJ2
 
 
 LICENSE: BSD

@@ -111,7 +111,6 @@ class Common(Configuration):
 
     # DATABASE CONFIGURATION
     # See: https://docs.djangoproject.com/en/dev/ref/settings/#databases
-    #DATABASES = values.DatabaseURLValue('postgres://localhost/Theatre_CS399')
     DATABASES = {
     'default': {
     'ENGINE':'django.db.backends.postgresql_psycopg2',

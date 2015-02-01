@@ -232,7 +232,7 @@ man_pages = [
 texinfo_documents = [
     ('index', 'Theatre_CS399', u'Theatre Documentation',
      u'Kyle Andrew McGinn', 'Theatre',
-     'CS399-PROJ2', 'Miscellaneous'),
+     'CS399_PROJ2', 'Miscellaneous'),
 ]
 
 # Documents to append as an appendix to all manuals.
