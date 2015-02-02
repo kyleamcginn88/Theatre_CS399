@@ -4,11 +4,11 @@
 
 {% block content %}
 
-<h1> Welcome {{name}}</h1>
+<h1> Top 15 Movies: </h1>
 
 <ol>
-  {% for movie in list_movies %}
-   <li>{{movie}} ell</li>
+  {% for item, value in list_movies %}
+   <li>{{ item }} -> {{ value }}</li>
   {% endfor %}
 </ol>
 
