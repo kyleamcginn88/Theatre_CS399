@@ -13,4 +13,5 @@ def location(request):
     return render(request, 'location.html', {})
 	
 def movies(request):
-    return render(request, 'movies.html', {})
+    list_movies = ['Predict', 'Galactica Reborn', 'Destructio']
+    return render(request, 'movies.html', {"name": 'Test', 'list_movies': list_movies})

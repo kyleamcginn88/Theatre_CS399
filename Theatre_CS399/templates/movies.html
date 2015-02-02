@@ -3,5 +3,13 @@
 {% block nav-movies %}class="active"{% endblock %}
 
 {% block content %}
-words
+
+<h1> Welcome {{name}}</h1>
+
+<ol>
+  {% for movie in list_movies %}
+   <li>{{movie}} ell</li>
+  {% endfor %}
+</ol>
+
 {% endblock %}
