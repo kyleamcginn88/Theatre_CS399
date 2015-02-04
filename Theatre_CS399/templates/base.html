@@ -2,14 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
 
     <title> {% block titleBlock %} {% endblock %}</title>
 
-    <!-- Bootstrap core CSS -->
+    <!-- Bootstrap CSS -->
     <link href="../static/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
@@ -56,18 +52,6 @@ body {
               <li {% block nav-movies %}{% endblock %}><a href="{% url "movies" %}">Movies</a></li>
               <li {% block nav-performances %}{% endblock %}><a href="{% url "performances" %}">Performances</a></li>
               <li {% block nav-store %}{% endblock %}><a href="{% url "store" %}">Store</a></li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                <ul class="dropdown-menu" role="menu">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">Something else here</a></li>
-                  <li class="divider"></li>
-                  <li class="dropdown-header">Nav header</li>
-                  <li><a href="#">Separated link</a></li>
-                  <li><a href="#">One more separated link</a></li>
-                </ul>
-              </li>
             </ul>
             <ul class="nav navbar-nav navbar-right" style="font-size: 19px">
               <li><a href="https://github.com/kyleamcginn88/Theatre_CS399"><span class="fa fa-github"></span></a></li>
@@ -79,18 +63,14 @@ body {
         </div><!--/.container-fluid -->
       </nav>
 
-      <div class="container">
-      
+
       <div class="jumbotron">
 
           {% block content %} {% endblock %}
         
       </div>
      
-      </div>
-		<div class="container">
-      
-      	<div class="jumbotron">
+      	<div class="breadcrumb">
       	<div align="center">
       	<font size="2" align="center">
 			Copyright &copy; No Popcorn 2015<br>
@@ -100,9 +80,7 @@ body {
           	
         </font>
         </div>
-     	 </div>
-     
-     	 </div>
+        </div>
     </div> <!-- /container -->
 
 
