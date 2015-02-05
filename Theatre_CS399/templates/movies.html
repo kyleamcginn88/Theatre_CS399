@@ -7,8 +7,8 @@
 <h1> Top 15 Movies: </h1>
 
 <ol>
-  {% for item, value in list_movies %}
-   <li>{{ item }} -> {{ value }}</li>
+  {% for item in all_movies %}
+   <li>{{ item.movie_name }} </li>
   {% endfor %}
 </ol>
 
