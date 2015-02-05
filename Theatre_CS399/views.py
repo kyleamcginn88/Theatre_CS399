@@ -40,7 +40,7 @@ def movies(request):
 	('Fist of Vengence' , 'A fighting movie about fists!') ,
 	('Triple Honor' , 'Triple kills, triple honor') ,
 	('Sudden Execution' , 'Fun with turrets.') ,
-	('Vendetta of Jeopardy' , 'A spin off from V for vendetta') ,
+	('Vendetta of Jeopardy' , 'A spin off from V for vendetta.') ,
 	('Inferno of Action' , 'Fiery flaming spiral of death.') ,
 	('Soldier of Justice' , 'Judge Dredd is back!') ]
     return render(request, 'movies.html', {'list_movies': list_movies})
