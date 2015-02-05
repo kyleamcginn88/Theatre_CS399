@@ -1,5 +1,5 @@
 """
-Django settings for Theatre_CS399 project.
+Django settings for Theatre project.
 
 For more information on this file, see
 https://docs.djangoproject.com/en/1.7/topics/settings/
@@ -17,7 +17,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 # See https://docs.djangoproject.com/en/1.7/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'uci=xy$654ky459gf&ks6-_nw2a7+b&tunz$uyg@ry5_a@hf8m'
+SECRET_KEY = '9j=5ai4_-bz@l$a&9vb)9=e+1+*r$cvpie#7p+k0hrn35gbri%'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -36,7 +36,6 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-	'Theatre_CS399',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -49,9 +48,9 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'Theatre_CS399.urls'
+ROOT_URLCONF = 'Theatre.urls'
 
-WSGI_APPLICATION = 'Theatre_CS399.wsgi.application'
+WSGI_APPLICATION = 'Theatre.wsgi.application'
 
 
 # Database
@@ -77,12 +76,8 @@ USE_L10N = True
 
 USE_TZ = True
 
-TEMPLATE_DIRS = [os.path.join(BASE_DIR,'Theatre_CS399/templates')]
-
-
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.7/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [os.path.join(BASE_DIR,'Theatre_CS399/static')]
